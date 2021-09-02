@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="iStudio_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    <p class="text-center">
+        <table class="nav-justified">
+            <tr>
+                <td style="width: 479px">
+                    <img alt="" src="BACKLOGO.PNG" style="width: 330px; height: 70px" /></td>
+                <td>
+                    <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/iStudio/Home.aspx">Home</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hlAboutUs" runat="server" NavigateUrl="~/iStudio/AboutUs.aspx">About Us</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hlHowItWorks" runat="server" NavigateUrl="~/iStudio/HowItWorks.aspx">How It Works</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hlOrderNow" runat="server" NavigateUrl="~/iStudio/OrderNow.aspx">Order Now</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hlFAQ" runat="server" NavigateUrl="~/iStudio/FAQ.aspx">FAQ</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hlContactUs" runat="server" NavigateUrl="~/iStudio/ContactUs.aspx">Contact Us</asp:HyperLink>
+                </td>
+            </tr>
+            </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <img alt="" src="backgg.jpg" style="width: 750px; height: 391px" />
+        </asp:ContentPlaceHolder>
+        <br />
+        <br />
+    </p>
+</asp:Content>
+
